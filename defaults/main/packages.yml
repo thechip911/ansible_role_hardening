@@ -47,6 +47,8 @@ packages_debian:
   - wamerican
   - zsh
   - tree
+  - vifm
+  - pgcli
 packages_redhat:
   - audispd-plugins
   - audit
