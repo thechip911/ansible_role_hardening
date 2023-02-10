@@ -49,6 +49,7 @@ packages_debian:
   - tree
   - vifm
   - pgcli
+  - postgresql
 packages_redhat:
   - audispd-plugins
   - audit
