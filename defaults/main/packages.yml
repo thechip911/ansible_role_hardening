@@ -34,7 +34,7 @@ packages_debian:
   - libpam-cap
   - libpam-modules
   - libpam-pwquality
-  - libpam-tmpdir
+#  - libpam-tmpdir
   - lsb-release
   - needrestart
   - openssh-server

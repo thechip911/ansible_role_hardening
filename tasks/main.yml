@@ -38,8 +38,8 @@
 - name: Configure systemd timesyncd
   ansible.builtin.include_tasks: timesyncd.yml
 
-#- name: Clean fstab
-#  ansible.builtin.include_tasks: fstab.yml
+- name: Clean fstab
+  ansible.builtin.include_tasks: fstab.yml
 
 - name: Configure shm and tmp mounts
   ansible.builtin.include_tasks: mount.yml
