@@ -41,8 +41,8 @@
 - name: Clean fstab
   ansible.builtin.include_tasks: fstab.yml
 
-- name: Configure shm and tmp mounts
-  ansible.builtin.include_tasks: mount.yml
+#- name: Configure shm and tmp mounts
+#  ansible.builtin.include_tasks: mount.yml
 
 - name: Disable prelink
   ansible.builtin.include_tasks: prelink.yml
