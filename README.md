@@ -74,9 +74,7 @@ None.
       vars:
         block_blacklisted: true
         sshd_admin_net:
-          - 10.0.2.0/24
-          - 192.168.0.0/24
-          - 192.168.1.0/24
+          - 10.0.2.0/16
         suid_sgid_permissions: false
 ...
 ```
