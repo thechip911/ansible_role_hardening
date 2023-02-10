@@ -377,7 +377,6 @@ suid_sgid_blocklist:
   - yum
   - zathura
   - zip
-  - zsh
   - zsoelim
   - zypper
 ...
