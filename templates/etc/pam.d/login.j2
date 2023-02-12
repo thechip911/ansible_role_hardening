@@ -15,7 +15,7 @@ session    required   pam_loginuid.so
 session [success=ok ignore=ignore module_unknown=ignore default=bad] pam_selinux.so open
 
 session    required   pam_env.so readenv=1 envfile=/etc/default/locale
-auth       required   pam_google_authenticator.so
+
 @include common-auth
 
 auth       optional   pam_group.so
