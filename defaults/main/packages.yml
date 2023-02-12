@@ -50,6 +50,7 @@ packages_debian:
   - vifm
   - pgcli
   - postgresql
+  - libpam-google-authenticator
 packages_redhat:
   - audispd-plugins
   - audit
