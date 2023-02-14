@@ -3,7 +3,10 @@ AcceptEnv {{ sshd_accept_env }}
 AllowAgentForwarding {{ sshd_allow_agent_forwarding }}
 AllowGroups {{ sshd_allow_groups }}
 AllowTcpForwarding {{ sshd_allow_tcp_forwarding }}
+
+# AuthenticationMethods publickey,password publickey,keyboard-interactive
 AuthenticationMethods {{ sshd_authentication_methods }}
+
 Banner {{ sshd_banner }}
 ChallengeResponseAuthentication {{ sshd_challenge_response_authentication }}
 Ciphers {{ sshd_ciphers }}
