@@ -5,7 +5,7 @@ sshd_admin_net:
 sshd_allow_agent_forwarding: 'yes'
 sshd_allow_groups: sudo
 sshd_allow_tcp_forwarding: 'yes'
-sshd_authentication_methods: publickey,password publickey,keyboard-interactive
+#sshd_authentication_methods: publickey,password publickey,keyboard-interactive
 sshd_banner: /etc/issue.net
 sshd_challenge_response_authentication: 'yes'
 sshd_ciphers: chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes256-ctr
