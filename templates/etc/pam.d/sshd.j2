@@ -2,10 +2,8 @@
 
 # Standard Un*x authentication.
 
-auth       required   pam_google_authenticator.so
-
 @include common-auth
-
+auth       required   pam_google_authenticator.so
 # Disallow non-root logins when /etc/nologin exists.
 account    required     pam_nologin.so
 
