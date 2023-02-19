@@ -2,9 +2,6 @@
 - name: Install local facts
   ansible.builtin.include_tasks: facts.yml
 
-- name: Install and Configure Kubes
-  ansible.builtin.include_tasks: kubes.yml
-
 - name: Configure systemd resolved
   ansible.builtin.include_tasks: resolvedconf.yml
 
@@ -67,6 +64,9 @@
 
 - name: Install and Configure Docker
   ansible.builtin.include_tasks: docker.yml
+
+- name: Install and Configure Kubes
+  ansible.builtin.include_tasks: kubes.yml
 
 - name: Restrict root access
   ansible.builtin.include_tasks: rootaccess.yml
