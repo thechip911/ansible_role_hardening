@@ -1,0 +1,31 @@
+---
+- name: Get Dependencies for Kubes
+  become: true
+  ansible.builtin.command:
+    cmd: sudo apt-get install -y apt-transport-https ca-certificates curl
+
+- name: Get Signing Keys
+  become: true
+  ansible.builtin.command:
+    cmd: sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+- name: Add Kubes Repo to apt
+  become: true
+  ansible.builtin.command:
+    cmd: echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+- name: Update apt
+  become: true
+  ansible.builtin.command:
+    cmd: sudo apt-get update
+
+- name: Install Kubes
+  become: true
+  ansible.builtin.command:
+    cmd: sudo apt-get install -y kubelet kubeadm kubectl
+
+- name: Hold Kubernetes Packages
+  become: true
+  ansible.builtin.command:
+    cmd: sudo apt-mark hold kubelet kubeadm kubectl
+...
