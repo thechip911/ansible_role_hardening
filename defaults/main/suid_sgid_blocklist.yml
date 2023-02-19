@@ -92,7 +92,6 @@ suid_sgid_blocklist:
   - dmidecode
   - dmsetup
   - dnf
-  - docker
   - dosbox
   - dpkg
   - dvips
@@ -288,7 +287,6 @@ suid_sgid_blocklist:
   - shuf
   - slsh
   - smbclient
-  - snap
   - socat
   - socket
   - soelim
