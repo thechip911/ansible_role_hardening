@@ -46,6 +46,7 @@ packages_debian:
   - vlock
   - wamerican
   - zsh
+  - ncdu
   - tree
   - vifm
   - pgcli

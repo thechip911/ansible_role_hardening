@@ -62,11 +62,11 @@
 - name: Configure adduser and useradd
   ansible.builtin.include_tasks: adduser.yml
 
-#- name: Install and Configure Docker
-#  ansible.builtin.include_tasks: docker.yml
+- name: Install and Configure Docker
+  ansible.builtin.include_tasks: docker.yml
 
-#- name: Install and Configure Kubes
-#  ansible.builtin.include_tasks: kubes.yml
+- name: Install and Configure Kubes
+  ansible.builtin.include_tasks: kubes.yml
 
 - name: Restrict root access
   ansible.builtin.include_tasks: rootaccess.yml
