@@ -68,12 +68,6 @@
 - name: Install and Configure Kubes
   ansible.builtin.include_tasks: kubes.yml
 
-- name: Install and Configure MiniKubes
-  ansible.builtin.include_tasks: minikubes.yml
-
-#- name: Install and Configure MicroK8s
-#  ansible.builtin.include_tasks: microk8s.yml
-
 - name: Install and Configure KubeADM
   ansible.builtin.include_tasks: kubeadm.yml
 
